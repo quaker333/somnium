@@ -124,6 +124,9 @@ footer{
 	color: gray;
 }
 @media only screen and (max-width: 800px) {
+	.nav-content {
+		font-size: 30px;
+	}
 	.content-letter{
 		color: lightgray;
 		left: 40%;
