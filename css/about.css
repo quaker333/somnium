@@ -1,0 +1,55 @@
+
+.intro-header, .part-header {
+	color: white;
+}
+.part-header, .part-text {
+	padding: 15px 0px;
+}
+.about-img {
+	position: relative;
+	width: 50%;
+}
+.autor-img {
+	border-radius: 50%;
+}
+.music-link {
+	margin: 0px 10px;
+	color: lightgray;
+	background-color: transparent;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.music-link:hover {
+	color: white;
+}
+@media only screen and (max-width: 1400px) {
+    .about-img {
+		width: 55%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+    .about-img {
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 800px) {
+    .about-img {
+		width: 65%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.about-img {
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.about-img {
+		width: 80%;
+	}
+
+}
+@media only screen and (max-width: 400px) {
+	.about-img {
+		width: 90%;
+	}
+}

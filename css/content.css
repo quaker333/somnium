@@ -1,0 +1,150 @@
+main {
+	position: relative;
+	bottom: 0%;
+	width: 100%;
+	height: 400%;
+	transition: 2s;
+}
+.arrow-up, .arrow-down {
+	position: fixed;
+	margin: 0% 45%;
+	width: 10%;
+	color: lightgray;
+	font-size: 40px;
+	z-index: 1;
+	opacity: 0;	
+	transition: color 0.5s, opacity 1s;
+}
+.arrow-up:hover, .arrow-down:hover {
+	color: white;
+}
+.arrow-up {
+	top: 2.5%;	
+}
+.arrow-down {
+	bottom: 2.5%;
+}
+.content-div {
+	width: 100%;
+	height: 25%;
+}
+.content-intro {
+	padding: 15% 10%;
+	opacity: 0;
+	animation: showUp 3s 1s forwards;
+}
+@keyframes showUp {
+	to {opacity: 1;}
+}
+.intro-header {
+	font-size: 100px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.intro-text {
+	color: lightgray;
+	font-size: 20px;
+	font-weight: 100;
+}
+.content-part {
+	position: relative;
+	padding: 100px 20%;
+}
+.part-header, .part-text {
+	position: relative;
+	bottom: 0;
+}
+.part-header {
+	display: block;
+	font-size: 40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	transition: color 1s;
+	cursor: pointer;
+	opacity: 1;
+	transition: opacity 0.5s, color 1s;
+}
+.part-header:hover {
+	color: white;
+}
+.part-text {
+	display: none;
+	color: lightgray;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.part-img {
+	position: relative;
+	width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+    .content-part {
+        padding: 100px 15%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .content-part {
+        padding: 100px 10%;
+    }
+}
+@media only screen and (max-width: 800px) {
+	.content-intro {
+		padding: 25% 10%;
+	}
+	.intro-header {
+		font-size: 70px;
+	}
+    .content-part {
+        padding: 100px 5%;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+	.content-intro {
+		padding: 30% 10%;
+	}
+	.intro-header {
+		font-size: 60px;
+	}
+    .content-part {
+        padding: 100px 0%;
+    }
+    .content-header, .part-text {
+        margin: 0% 5%;
+    }
+}
+@media only screen and (max-width: 500px) {
+	.intro-header {
+		font-size: 50px;
+	}
+    .content-part {
+        padding: 180px 0%;
+    }
+    .part-header {
+    	font-size: 30px;
+    }
+    .part-text {
+        margin: 0% 5%;
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+	.content-intro {
+		padding: 40% 10%;
+	}
+	.intro-header {
+		font-size: 40px;
+	}
+	.intro-text {
+		font-size: 15px;
+	}
+    .content-part {
+        padding: 180px 0%;
+    }
+    .content-header, .part-text {
+        margin: 0% 5%;
+    }
+}
