@@ -11,6 +11,8 @@
 }
 .autor-img {
 	border-radius: 50%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .music-link {
 	margin: 0px 10px;
