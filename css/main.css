@@ -133,7 +133,10 @@ footer{
 		color: lightgray;
 		width: 100%;
 		left: 0%;
-	}   
+	}
+	section:hover .content-letter{
+		left: 0%;
+	}  
 }
 
 	
