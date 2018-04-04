@@ -13,12 +13,10 @@ function toggleVolume() {
 }
 
 function toggleNav() {
-	if(document.getElementById("nav").style.height == "100%") {
-		audio.volume = 1;		
+	if(document.getElementById("nav").style.height == "100%") {		
 		document.getElementById("nav").style.height = "0%";
 		document.getElementById("nav-button").style.transform = "rotateX(0deg)";
 	} else {
-		audio.volume = 0.5;
 		document.getElementById("nav").style.height = "100%";
 		document.getElementById("nav-button").style.transform = "rotateX(180deg)";
 	}
