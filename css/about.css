@@ -57,8 +57,8 @@
 		width: 90%;
 	}
 }
-@media only screen and (max-height: 650px) {
+@media screen and (min-width: 450px) , screen and (max-height: 650px) {
 	.about-img {
-		width: 50%;
+		width: 45%;
 	}
 }
