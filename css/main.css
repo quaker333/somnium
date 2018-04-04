@@ -131,9 +131,9 @@ footer{
 	}
 	.content-letter{
 		color: lightgray;
-		left: 40%;
-	}
-	    
+		width: 100%;
+		left: 0%;
+	}   
 }
 
 	
