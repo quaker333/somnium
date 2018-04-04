@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<title>NIGHTMARES</title>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../css/content.css">
 	<link rel="stylesheet" type="text/css" href="../css/nightmares.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16">
-	<audio id="audio" src="../music/Aphex Twin - Hankie.mp3" autoplay loop></audio>
+	
 	
 </head>
 <body onload="setting()">	
 	<nav id="nav" class="nav">
 		<div class="control">
 			<a href="../index.html" class="home"  ><i class="fa fa-home"></i></a>
-			<span class="nav-button" type="button" onclick="toggleNav()"><i id="nav-button" class="fa fa-bars"></i></span>
-			<span id="volume-on" class="volume" type="button" onclick="toggleVolume()"><i class="fa fa-volume-up"></i></span>
-			<span id="volume-off" class="volume" type="button" onclick="toggleVolume()"><i class="fa fa-volume-off"></i></span>	
+			<button class="nav-button" type="button" onclick="toggleNav()"><i  id="nav-button" class="fa fa-bars"></i></button>
+			<button id="volume-on" class="volume" type="button" onclick="toggleVolume()"><i class="fa fa-volume-up"></i></button>
+			<button id="volume-off" class="volume" type="button" onclick="toggleVolume()"><i class="fa fa-volume-off"></i></button>	
 		</div>
 		<div class="nav-content">
 			<section class="dreams">
+				<h2>dreams</h2>
 				<a href="dreams.html" class="nav-link">
 					<div class="content-letter right">d</div>
 					<div class="content-letter left">r</div>
@@ -33,6 +36,7 @@
 		</div>
 		<div class="nav-content">
 			<section class="nightmares">
+				<h2>nightmares</h2>
 				<a href="#" class="nav-link">
 					<div class="content-letter right">n</div>
 					<div class="content-letter left">i</div>
@@ -49,6 +53,7 @@
 		</div>
 		<div class="nav-content">
 			<section class="others">
+				<h2>others</h2>
 				<a href="others.html" class="nav-link">
 					<div class="content-letter right">o</div>
 					<div class="content-letter left">t</div>
@@ -61,6 +66,7 @@
 		</div>
 		<div class="nav-content">
 			<section class="about">
+				<h2>about</h2>
 				<a href="about.html" class="nav-link">
 					<div class="content-letter right">a</div>
 					<div class="content-letter left">b</div>
@@ -71,8 +77,8 @@
 			</section>
 		</div>	
 	</nav>	
-	<div id="arrow-up" class="arrow-up" type="button" onclick="up1()"><i class="fa fa-angle-up"></i></div>
-	<div id="arrow-down" class="arrow-down" type="button" onclick="down1()"><i class="fa fa-angle-down"></i></div>		
+	<button id="arrow-up" class="arrow-up" type="button" onclick="up1()"><i class="fa fa-angle-up"></i></button>
+	<button id="arrow-down" class="arrow-down" type="button" onclick="down1()"><i class="fa fa-angle-down"></i></button>		
 	<main id="content">	
 		<div class="content-div content-intro">
 			<h1 class="intro-header">nightmares</h1>
@@ -84,34 +90,34 @@
 		</div>
 		<div class="content-div content-part">
 			<div class="part-center">
-			<img class="part-img" src="../images/dead-people.svg">
-			<h2 class="part-header" type="button" onclick="toggleText()">dead people</h2>
-			<p class="part-text" type="button" onclick="toggleText()">				
+			<img class="part-img" src="../images/dead-people.svg" alt="dead people image">
+			<button class="part-header" type="button" onclick="toggleText()">dead people</button>
+			<button class="part-text" type="button" onclick="toggleText()">				
 				You’re scared of change. It can also mean you’re feeling vulnerable.
-			</p>
+			</button>
 			</div>			
 		</div>
 		<div class="content-div content-part">
-			<img class="part-img" src="../images/being-chased.svg">
-			<h2 class="part-header" type="button" onclick="toggleText()">being chased</h2>
-			<p class="part-text" type="button" onclick="toggleText()">
+			<img class="part-img" src="../images/being-chased.svg" alt="being chased image">
+			<button class="part-header" type="button" onclick="toggleText()">being chased</button>
+			<button class="part-text" type="button" onclick="toggleText()">
 				You’re feeling in danger or under pressure. 
-			</p>
+			</button>
 			
 		</div>
 		<div class="content-div content-part">
-			<img class="part-img" src="../images/monsters.svg">
-			<h2 class="part-header" type="button" onclick="toggleText()">monsters</h2>
-			<p class="part-text" type="button" onclick="toggleText()">
+			<img class="part-img" src="../images/monsters.svg" alt="monsters image">
+			<button class="part-header" type="button" onclick="toggleText()">monsters</button>
+			<button class="part-text" type="button" onclick="toggleText()">
 				 You’re afraid of some aspects of yourself. Monsters are abstractions of your fears and addictions. 
 				 Defeat monsters by solving your problems. 
-			</p>
+			</button>
 		</div>
 	</main>
 	<footer>
 			<span class="year-name"><i class="fa fa-copyright copyright"></i> 2018 Matúš Smutný</span>
 	</footer>
-
+	<audio id="audio" src="../music/AphexTwin-Hankie.mp3" autoplay loop></audio>
 	<script src="../js/script.js"></script>
 	
 </body>
