@@ -3,7 +3,7 @@
 	color: white;
 }
 .part-header, .part-text {
-	padding: 15px 0px;
+	padding: 15px 5%;
 }
 .about-img {
 	position: relative;
@@ -13,16 +13,6 @@
 	border-radius: 50%;
 	-webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}
-.music-link {
-	margin: 0px 10px;
-	color: lightgray;
-	background-color: transparent;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-.music-link:hover {
-	color: white;
 }
 @media only screen and (max-width: 1400px) {
     .about-img {
@@ -46,19 +36,31 @@
 	.content-part {
         padding: 65px 0%;
     }
+    .content-header, .part-text {
+        padding: : 15px 5%;
+    }
 }
 @media only screen and (max-width: 500px) {
 	.about-img {
 		width: 80%;
 	}
+	.content-header, .part-text {
+        padding: : 15px 5%;
+    }
 }
 @media only screen and (max-width: 400px) {
 	.about-img {
 		width: 90%;
 	}
+	.content-header, .part-text {
+        padding: : 15px 5%;
+    }
 }
 @media screen and (min-width: 450px) , screen and (max-height: 650px) {
 	.about-img {
 		width: 45%;
 	}
+	.content-header, .part-text {
+        padding: : 15px 5%;
+    }
 }

@@ -6,10 +6,14 @@ main {
 	transition: 2s;
 }
 .arrow-up, .arrow-down {
+	left: 0%;
+	border: none;
+	outline: none;
 	position: fixed;
 	margin: 0% 45%;
 	width: 10%;
 	color: lightgray;
+	background-color: transparent;
 	font-size: 40px;
 	z-index: 1;
 	opacity: 0;	
@@ -51,8 +55,15 @@ main {
 	padding: 100px 20%;
 }
 .part-header, .part-text {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
 	position: relative;
-	bottom: 0;
+	left: 50%;
+  	transform: translateX(-50%);
+
+
 }
 .part-header {
 	display: block;
@@ -112,7 +123,7 @@ main {
         padding: 100px 0%;
     }
     .content-header, .part-text {
-        margin: 0% 5%;
+        padding: : 0% 5%;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -126,7 +137,7 @@ main {
     	font-size: 30px;
     }
     .part-text {
-        margin: 0% 5%;
+        padding: 0% 5%;
         font-size: 15px;
     }
 
@@ -145,6 +156,6 @@ main {
         padding: 150px 0%;
     }
     .content-header, .part-text {
-        margin: 0% 5%;
+        padding: 0% 5%;
     }
 }

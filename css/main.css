@@ -67,6 +67,9 @@ section:hover .content-letter{
 	left: 40%;
 	color: white;
 }
+h2{
+	display: none;
+}
 .control {
 	width: 100%;
 	height: 24px;
@@ -78,13 +81,17 @@ section:hover .content-letter{
 
 }
 .home,.nav-button,.volume{
+	outline: none;
+	display: inline-block;
 	margin: 2px 10px;
-	width: 20px;
+	padding: 0;
+	width: 30px;
 	font-size: 20px;	
 	color: gray;
     background-color: transparent;
     text-decoration: none;
     transition: color 1s;
+    border: none;
 }
 .home:hover,.nav-button:hover,.volume:hover{
 	color: white;
